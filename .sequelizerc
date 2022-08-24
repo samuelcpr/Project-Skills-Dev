@@ -1,0 +1,8 @@
+const path = require("path")
+
+module.exports = {
+    'config' : path.resolve("config", "siquelize-cli.js"),
+    "modules-path": path.resolve("src", "modules"),
+    "migrations-path": path.resolve("src", "database", "migrations"),
+    "seeders-path": path.resolve("src", "database", "seeders")
+}
