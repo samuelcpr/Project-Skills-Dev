@@ -13,3 +13,7 @@ sudo docker exec -it ce38584d5e64 bash
 # entrar no postegres
 
 psql -U postegres
+
+# Comando docker para iniciar o container
+
+sudo docker run -p 3000:3000 skill
