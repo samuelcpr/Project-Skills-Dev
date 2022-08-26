@@ -1,11 +1,11 @@
 version: "3.1"
 
 services:
-
-  db:
-    image: postgres:14.2-alpine
-    restart: always
-    environment:
-      POSTGRES_PASSWORD: example
+  app:
+    build: .
+    container_name: skillcontainer
     ports:
-      - "5432:5432"
+      - 3000:3000
+    volumes:
+      - .:/usr/app
+ 
