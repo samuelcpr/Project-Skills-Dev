@@ -1,12 +1,13 @@
+// src/app.ts
+
 import dotenv from 'dotenv'
 dotenv.config()
 
 import express from 'express'
-import { Candidate } from './models/candidate'
+import { router } from './routes'
+
 
 const app = express()
-
-const router = express.Router()
 
 app.use(router)
 
