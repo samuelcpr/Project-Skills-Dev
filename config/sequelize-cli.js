@@ -1,6 +1,6 @@
 require('dotenv').config();
 
 module.exports = {
-    dialect: 'postgres',
+    dialect: 'postgresql',
     url: process.env.DATABASE_URL
 }
